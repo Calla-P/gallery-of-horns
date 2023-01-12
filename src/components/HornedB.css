@@ -1,0 +1,30 @@
+.cards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: content;
+}
+
+.picture {
+    border:3px solid slategray;
+    /* width:100%; */
+    height:auto;
+    overflow:hidden;
+    max-height: 220px;
+}
+
+.iLikeItWrap {
+    display:flex;
+}
+
+.horned {
+    display:flex;
+    flex-direction: coulmn;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iLikeItButton {
+    border-radius: 100%;
+    background-color: rgb(28, 86, 145);
+}

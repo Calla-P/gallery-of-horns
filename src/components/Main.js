@@ -1,9 +1,8 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-import unicorn from './img/unicorn.jpeg';
-import rhino from './img/rhino.avif';
-import costume from './img/costume.jpeg';
 import '../App.css'
+import data from './data.json';
+
 class Main extends React.Component{
 
     render() {
@@ -12,16 +11,30 @@ class Main extends React.Component{
 
     <>
     <main>
-        <HornedBeast title={"UniWhal"} imgUrl={unicorn} description={"A unicorn and a narwhal nuzzling their horns"}/>
-
-        <HornedBeast title={"Rhino Family"} imgUrl={rhino} description={"Parent rhino with two babies"} />
-
-        <HornedBeast title={"Unicorn Head"} imgUrl={costume} description={"Someone wearing a very silly unicorn head mask"}/>
+      {
+        this.props.data.map((animal) =>
+        (
+          <HornedBeast
+          id={animal._id}
+          title={animal.title}
+          image_url={animal.image_url}
+          description={animal.description}
+          horns={animal.horns}
+          />
+        )
+        )
+      }
     </main>
     </>
   
-    );
-  }
-}
+    )
+  };
+};
 
   export default Main;
+
+  // <HornedBeast title={"UniWhal"} img_url={unicorn} description={"A unicorn and a narwhal nuzzling their horns"}/>
+
+  // <HornedBeast title={"Rhino Family"} img_url={rhino} description={"Parent rhino with two babies"} />
+
+  // <HornedBeast title={"Unicorn Head"} img_url={costume} description={"Someone wearing a very silly unicorn head mask"}/>
