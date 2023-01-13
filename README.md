@@ -96,17 +96,8 @@ Actual time needed to complete: 1 1/2 hours
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 8:15pm
+Start time: 8:15pm - 10:30 pm Wednesday
 
-Finish time: 9:45 and beyond
+Finish time: 7:00 - 10:00pm and Thursday
 
-Actual time needed to complete: _____
-
-**Feature 4: Submission**
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
+Actual time needed to complete: 4 hours
