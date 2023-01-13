@@ -2,13 +2,16 @@ import React from 'react';
 import './HornedB.css'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
-import data from './data.json';
 
 class HornedBeast extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hornedData: data,
+            title:this.props.title,
+            image_url:this.props.image_url,
+            description:this.props.description,
+            horns:this.props.horns,
+            keyword:this.props.keyword,
             likes: 0,
         };
     }
@@ -22,6 +25,7 @@ class HornedBeast extends React.Component {
 
 
     render() {
+        
         return (
             <>
            
@@ -29,19 +33,17 @@ class HornedBeast extends React.Component {
                 <Card.Body>
                     <Card.Header>{this.props.title}
                     </Card.Header> 
-                    <div className= 'cards'>
-                        <img
-                        className='picture'
-                        src={this.props.imgUrl}
+                    
+                        <Card.Img
+                        src={this.props.image_url}
                         title={this.props.title}
                         alt={this.props.description}
-                        >
-
-                        </img>
+                        />
+    
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
-                    </div>
+                    {/* </div> */}
 
                     <div className='iLikeItWrap'>
                         <Button className='iLikeItButton' onClick={(this.handleLikes)}>I Like this!</Button>
