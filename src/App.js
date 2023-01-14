@@ -1,6 +1,6 @@
 
 import './App.css';
-import Header from './components/Header';
+import Headers from './components/Headers';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import data from './components/data.json';
@@ -8,7 +8,7 @@ import data from './components/data.json';
 function App() {
   return (
   <>
-  <Header/>
+  <Headers/>
   <Main
   data={data}/>
   <Footer/>
