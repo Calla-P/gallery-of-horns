@@ -1,7 +1,7 @@
 
 import './App.css';
 import Headers from './components/Headers';
-import Footer from './components/Footer';
+import Footers from './components/Footers';
 import Main from './components/Main';
 import data from './components/data.json';
 
@@ -11,7 +11,7 @@ function App() {
   <Headers/>
   <Main
   data={data}/>
-  <Footer/>
+  <Footers/>
   </>
 
   );
