@@ -1,6 +1,7 @@
 import React from 'react';
 import './HornedB.css'
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
 
 class HornedBeast extends React.Component {
@@ -28,7 +29,7 @@ class HornedBeast extends React.Component {
         
         return (
             <>
-           
+           <Col>
             <Card className={'hornedcard'}>
                 <Card.Body>
                     <Card.Header>{this.props.title}
@@ -43,7 +44,6 @@ class HornedBeast extends React.Component {
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
-                    {/* </div> */}
 
                     <div className='iLikeItWrap'>
                         <Button className='iLikeItButton' onClick={(this.handleLikes)}>I Like this!</Button>
@@ -51,6 +51,7 @@ class HornedBeast extends React.Component {
                     </div>
                 </Card.Body>
             </Card>
+            </Col>
             </>
         );
     }

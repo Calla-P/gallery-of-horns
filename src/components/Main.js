@@ -1,7 +1,8 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-// import data from './data.json';
 import '../App.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 
 class Main extends React.Component{
@@ -12,6 +13,8 @@ class Main extends React.Component{
 
     <>
     <main>
+      <Container>
+        <Row xs={2} s={2} md={3}>
       {
         this.props.data.map((animal) =>
         (
@@ -28,7 +31,8 @@ class Main extends React.Component{
         )
         )
       }
-
+        </Row>
+      </Container>
     </main>
     </>
   
