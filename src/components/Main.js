@@ -5,9 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 
+
 class Main extends React.Component{
 
     render() {
+      // console.log(this.props.handleOpenModal);
 
         return(
 
@@ -25,15 +27,18 @@ class Main extends React.Component{
           description={animal.description}
           horns={animal.horns}
           keyword={animal.keyword}
-
-
+          handleOpenModal={this.props.handleOpenModal}
           />
+
         )
         )
       }
         </Row>
+
       </Container>
+
     </main>
+
     </>
   
     )

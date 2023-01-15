@@ -3,6 +3,7 @@ import './HornedB.css'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
+// import SelectedBeast from './components/SelectedBeast';
 
 class HornedBeast extends React.Component {
     constructor(props) {
@@ -23,10 +24,15 @@ class HornedBeast extends React.Component {
             likes: this.state.likes + 1
         });
     }
-
+handleImageClick = () => {
+    console.log('here');
+    this.props.handleOpenModal(this.props.title,this.props.image_url,this.props.description);
+    // this.props.handleOpenModal(this.props.image_url);
+    // this.props.handleOpenModal(this.props.description);
+}
 
     render() {
-        
+        // console.log(this.props.handleOpenModal);
         return (
             <>
            <Col>
@@ -39,6 +45,7 @@ class HornedBeast extends React.Component {
                         src={this.props.image_url}
                         title={this.props.title}
                         alt={this.props.description}
+                        onClick={(this.handleImageClick)}
                         />
     
                         <Card.Text>

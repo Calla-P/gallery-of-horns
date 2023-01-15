@@ -1,0 +1,26 @@
+.modal-content {
+    border: 5px solid rgb(1, 92, 108);
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(9, 30, 170, 0.895), rgb(33, 149, 170),rgb(228, 112, 54));
+
+  }
+  
+  .modal-content img {
+    border: 2px solid rgb(128, 22, 22);
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+p {
+    font-weight: bolder;
+}
+
+.modal-title.h4 {
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
