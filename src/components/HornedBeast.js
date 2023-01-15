@@ -1,7 +1,9 @@
 import React from 'react';
 import './HornedB.css'
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
+// import SelectedBeast from './components/SelectedBeast';
 
 class HornedBeast extends React.Component {
     constructor(props) {
@@ -22,13 +24,18 @@ class HornedBeast extends React.Component {
             likes: this.state.likes + 1
         });
     }
-
+handleImageClick = () => {
+    console.log('here');
+    this.props.handleOpenModal(this.props.title,this.props.image_url,this.props.description);
+    // this.props.handleOpenModal(this.props.image_url);
+    // this.props.handleOpenModal(this.props.description);
+}
 
     render() {
-        
+        // console.log(this.props.handleOpenModal);
         return (
             <>
-           
+           <Col>
             <Card className={'hornedcard'}>
                 <Card.Body>
                     <Card.Header>{this.props.title}
@@ -38,12 +45,12 @@ class HornedBeast extends React.Component {
                         src={this.props.image_url}
                         title={this.props.title}
                         alt={this.props.description}
+                        onClick={(this.handleImageClick)}
                         />
     
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
-                    {/* </div> */}
 
                     <div className='iLikeItWrap'>
                         <Button className='iLikeItButton' onClick={(this.handleLikes)}>I Like this!</Button>
@@ -51,6 +58,7 @@ class HornedBeast extends React.Component {
                     </div>
                 </Card.Body>
             </Card>
+            </Col>
             </>
         );
     }
