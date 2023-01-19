@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 class Main extends React.Component{
 
     render() {
-      // console.log(this.props.handleOpenModal);
+    
 
         return(
 
@@ -18,7 +18,7 @@ class Main extends React.Component{
       <Container>
         <Row xs={2} s={2} md={3}>
       {
-        this.props.data.map((animal) =>
+        this.props.animalData.map((animal) =>
         (
           <HornedBeast
           key={animal._id}

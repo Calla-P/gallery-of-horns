@@ -3,6 +3,12 @@ body{
   background-image: linear-gradient(rgba(57, 77, 210, 0.895), rgb(33, 149, 170), rgb(68, 194, 131));
 }
 
+label.form-label{
+  font-weight: bolder;
+  padding-top: 10px;
+  
+}
+
 h1{
   background-color: rgb(53, 61, 58);
   color: rgb(246, 240, 240);
